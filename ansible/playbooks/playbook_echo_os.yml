@@ -1,0 +1,7 @@
+---
+- name: Echo OS
+  hosts: staging
+
+  tasks:
+  - name: echo os name
+    debug: msg={{ ansible_os_family }}
