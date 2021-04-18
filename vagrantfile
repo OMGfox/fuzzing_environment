@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.verbose = "v"
-    ansible.playbook = "../virtualbox/ansible/playbooks/docker_ubuntu2004/playbook.yml"
+    ansible.playbook = "../virtualbox/ansible/playbooks/docker_aflpp/playbook.yml"
     ansible.inventory_path = "../virtualbox/ansible/hosts" 
   end
 
